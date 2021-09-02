@@ -1,0 +1,272 @@
+/* General */
+table {
+  border-collapse: separate;
+  border-spacing: 15px 0;
+}
+
+/* Use grid-center inside of grid instead */
+/* Needs relative positioning of parent */
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fifty-fifty-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-center {
+  margin: auto;
+}
+
+.shiny-output-error-grid-center {
+  margin: auto;
+}
+
+.grid-vertical-center {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.grid-gap {
+  grid-column-gap: 10px;
+}
+
+.form-control {
+  position: relative;
+  top: 2px;
+}
+
+.import .form-control {
+  top: 0;
+}
+
+/* Table */
+.table-container {
+}
+
+.table-title {
+  font-weight: bold;
+}
+
+.table-container .selectize-control {
+  margin: 0;
+  top: 2px;
+}
+
+.table-container .form-group {
+  margin: 0;
+}
+
+/* Row container */
+.row-container {
+  display: grid;
+  margin: 3px 0;
+  padding: 0 5px 3px 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.row-content {
+  display: grid;
+  grid-template-columns: 10px 25px 125px 30px 1fr 30px 30px;
+  grid-column-gap: 10px;
+}
+
+/* Subrows */
+.subrows-container {
+  margin-left: 20px;
+  margin-right: 80px;
+}
+
+.subrow-container {
+  display: grid;
+  grid-template-columns: 25px 1fr 30px;
+  grid-column-gap: 10px;
+  margin: 3px 0;
+  padding-top: 3px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.subrow-container.m-index {
+  grid-template-columns: 35px 1fr 30px;
+}
+
+.sr-toggle-btn button {
+  box-shadow: unset;  
+}
+
+/* Select */
+.select-op-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+/* Rename */
+.rename-op-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+.rename-subrows .subrow-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 175px;
+  margin-right: -40px;
+}
+
+.rename-op-container.subrows-closed {
+  grid-template-columns: 1fr;
+}
+
+/* Filter */
+.filter-op-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+}
+
+/* Type */
+.type-op-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+}
+
+.type-subrows .subrow-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 175px;
+  margin-right: -40px;
+}
+
+.type-op-container.subrows-closed {
+  grid-template-columns: 1fr;
+}
+
+/* Mutate */
+.mutate-op-container {
+  display: grid;
+  grid-template-columns: minmax(200px, 20%) 30px minmax(120px, 20%) 10px 1fr 10px
+}
+
+/* Summarise */
+.summarise-op-container {
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr 10px 1fr 10px
+}
+
+/* Plot */
+.plot-subrow-content {
+  display: grid;
+  grid-template-columns: 25px auto 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 3px 0;
+}
+
+.plot-subrow-content + .subrows-container {
+  margin-right: 0;
+}
+
+.aes-content {
+  display: grid;
+  grid-template-columns: 25px 110px 1fr;
+}
+
+.aes-subrows-open .aes-content {
+  grid-template-columns: 25px 1fr 1fr;
+}
+
+.aes-subrow-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.aes-title-help {
+  display: grid;
+  grid-template-columns: 70px 30px;
+}
+
+.geom-content {
+  display: grid;
+  grid-template-columns: 25px 70px 30px 1fr;
+}
+
+.geom-subrow-content {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+}
+
+.facet-content {
+  display: grid;
+  grid-template-columns: 25px 70px 30px 120px 1fr
+}
+
+.coord-content {
+  display: grid;
+  grid-template-columns: 25px 70px 30px 160px 1fr;
+}
+
+.theme-content {
+  display: grid;
+  grid-template-columns: 25px 70px 30px 1fr;
+}
+
+/*Custom close button (cross)*/
+div .div-btn-close button {
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+}
+
+.span-btn-move button {
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+}
+
+.bttn.bttn-material-flat.bttn-default {
+  color: #444;
+}
+
+.div-btn-close-tablist button {
+  float: right;
+  position: absolute;
+  right: 40px;
+  top: 9px;
+}
+
+div .div-btn-close {
+  display: inline;
+}
+
+div .collapsible-tab-box {
+  padding: 0;
+}
+
+.box-body > div {
+  padding: 0;
+}
+
+.box {
+  margin-bottom: 10px;
+}
+
+/* Help */
+.help-btn button, .help-btn button:hover, .help-btn button:focus {
+  box-shadow: none;
+}
+
+.help-page {
+  text-align: justify;
+  max-width: 40vw;
+  width: max-content;
+  margin: auto;
+}
+
+.viewer > .col-sm-12 {
+  padding: 0;
+}
