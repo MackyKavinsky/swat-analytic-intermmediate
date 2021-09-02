@@ -22,7 +22,7 @@ How to use the application:
 1. Launch the application using RStudio or use the link given
 2. Select data type (xls, xlsx, rds, csv) then upload your dataset
 3. For transformation, select your dataset.
-4. Choose your operation (for example: select) then fill the details based on the criteria needed. ![transformation](transformation.jpg)
+4. Choose your operation (for example: select) then fill the details based on the criteria needed. ![transformation](transformation.png)
 5. Visualization is not been finished developed, hence it is not showing up on the tab (this is due my project manager decided to abandoned this project and focus on version 1)
 
 ---
